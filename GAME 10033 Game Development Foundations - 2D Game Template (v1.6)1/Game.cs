@@ -49,16 +49,15 @@ namespace MohawkGame2D
             Draw.SetFillColor(255, 255, 0); ;
             Draw.Ellipse(200, 100, 75, 125);
 
-            // this is the sunflower head
+            // this is the mustard head
             Draw.SetFillColor(255, 255, 0);
             Draw.Ellipse(200, 200, 150, 150);
-            Draw.SetLineColor(0);
 
             // this is the mouth of him
             Draw.SetFillColor(0);
             Draw.Arc(200, 220, 90, 90, 0, 180);
 
-            // this will be the left eye please
+            // this is the left eye
             Draw.SetFillColor(0);
             Draw.Ellipse(160, 175, 25, 25);
 
@@ -71,12 +70,31 @@ namespace MohawkGame2D
             if (Input.IsMouseButtonDown(MouseButton.Left) == true)
             {
                 //this is the wind and squinty face
+
+                //mustard squinty face
+                Draw.SetFillColor(255, 255, 0);
+                Draw.Ellipse(200, 200, 150, 150);
+
+                //mustard squinty left eye
+                Draw.SetFillColor(0);
+                Draw.Rectangle(140, 175, 45, 15);
+
+                //mustard squinty right eye
+                Draw.SetFillColor(0);
+                Draw.Rectangle(220, 175, 45, 15);
+
+                //mustard shut mouth
+                Draw.SetFillColor(0);
+                Draw.Rectangle(180, 220, 50, 20);
+
+                // scary wind particles
                 Draw.SetFillColor(76, 83, 95);
                 Draw.Rectangle(Input.GetMouseX(), Input.GetMouseY(), 150, 30);
                 Draw.SetFillColor(76, 83, 95);
                 Draw.Rectangle(Input.GetMouseX() + 50, Input.GetMouseY()+50, 150, 30);
                 Draw.SetFillColor(76, 83, 95);
-                Draw.Rectangle(Input.GetMouseX(), Input.GetMouseY(), 150, 30);
+                Draw.Rectangle(Input.GetMouseX()-50, Input.GetMouseY()-50, 150, 30);
+
 
 
             }
