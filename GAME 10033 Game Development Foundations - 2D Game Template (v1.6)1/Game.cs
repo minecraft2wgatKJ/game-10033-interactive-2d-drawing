@@ -67,12 +67,18 @@ namespace MohawkGame2D
             Draw.Ellipse(240, 175, 25, 25);
 
 
-            //ok i havent tried if statements yet here we go
+            //If statement for different faces
             if (Input.IsMouseButtonDown(MouseButton.Left) == true)
             {
-                //this piece of code is wind input related
+                //this is the wind and squinty face
                 Draw.SetFillColor(76, 83, 95);
-                Draw.Rectangle(Input.GetMouseX(), Input.GetMouseY(), 40, 20);
+                Draw.Rectangle(Input.GetMouseX(), Input.GetMouseY(), 150, 30);
+                Draw.SetFillColor(76, 83, 95);
+                Draw.Rectangle(Input.GetMouseX() + 50, Input.GetMouseY()+50, 150, 30);
+                Draw.SetFillColor(76, 83, 95);
+                Draw.Rectangle(Input.GetMouseX(), Input.GetMouseY(), 150, 30);
+
+
             }
 
 
