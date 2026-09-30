@@ -15,7 +15,10 @@ namespace MohawkGame2D
         /// </summary>
         public void Setup()
         {
-
+            //this the window stuff
+            Window.SetSize(400, 400);
+            Window.SetTitle("windy day");
+            Window.ClearBackground(0, 0, 200);
         }
 
         /// <summary>
@@ -23,10 +26,7 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
-            //this the window stuff
-            Window.SetSize(400, 400);
-            Window.SetTitle("windy day");
-            Window.ClearBackground(0, 0, 200);
+           
 
             // this the flower stalk
             Draw.Rectangle(180, 200, 40, 200);
@@ -53,6 +53,8 @@ namespace MohawkGame2D
             Draw.Ellipse(200, 200, 150, 150);
             Draw.SetFillColor(0, 205, 0);
             Draw.SetLineColor(0);
+
+
 
 
 
