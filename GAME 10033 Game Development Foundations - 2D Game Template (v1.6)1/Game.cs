@@ -15,10 +15,7 @@ namespace MohawkGame2D
         /// </summary>
         public void Setup()
         {
-            //this the window stuff
-            Window.SetSize(400, 400);
-            Window.SetTitle("windy day");
-            Window.ClearBackground(0, 0, 200);
+            
         }
 
         /// <summary>
@@ -26,7 +23,10 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
-
+            //this the window stuff
+            Window.SetSize(400, 400);
+            Window.SetTitle("windy day");
+            Window.ClearBackground(0, 0, 200);
 
             // this the flower stalk
             Draw.SetFillColor(0, 205, 0);
@@ -65,6 +65,15 @@ namespace MohawkGame2D
             // yarrrg! It's me right eye!
             Draw.SetFillColor(0);
             Draw.Ellipse(240, 175, 25, 25);
+
+
+            //ok i havent tried if statements yet here we go
+            if (Input.IsMouseButtonDown(MouseButton.Left) == true)
+            {
+                //this piece of code is wind input related
+                Draw.SetFillColor(76, 83, 95);
+                Draw.Rectangle(Input.GetMouseX(), Input.GetMouseY(), 40, 20);
+            }
 
 
 
