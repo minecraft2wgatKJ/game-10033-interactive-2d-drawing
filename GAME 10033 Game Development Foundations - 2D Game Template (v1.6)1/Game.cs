@@ -85,7 +85,7 @@ namespace MohawkGame2D
 
                 //mustard shut mouth
                 Draw.SetFillColor(0);
-                Draw.Rectangle(180, 220, 50, 20);
+                Draw.Rectangle(155, 220, 90, 20);
 
                 // scary wind particles
                 Draw.SetFillColor(76, 83, 95);
@@ -94,11 +94,7 @@ namespace MohawkGame2D
                 Draw.Rectangle(Input.GetMouseX() + 50, Input.GetMouseY()+50, 150, 30);
                 Draw.SetFillColor(76, 83, 95);
                 Draw.Rectangle(Input.GetMouseX()-50, Input.GetMouseY()-50, 150, 30);
-
-
-
             }
-
 
 
 
