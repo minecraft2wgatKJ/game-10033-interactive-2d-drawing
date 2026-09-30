@@ -23,12 +23,12 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
-            //this the window stuff
+            //window settings
             Window.SetSize(400, 400);
             Window.SetTitle("windy day");
             Window.ClearBackground(0, 0, 200);
 
-            // this the flower stalk
+            //flower stalk
             Draw.SetFillColor(0, 205, 0);
             Draw.Rectangle(180, 200, 40, 200);
             Draw.SetLineColor(0);
@@ -49,29 +49,28 @@ namespace MohawkGame2D
             Draw.SetFillColor(255, 255, 0); ;
             Draw.Ellipse(200, 100, 75, 125);
 
-            // this is the mustard head
+            //Wild mustard head
             Draw.SetFillColor(255, 255, 0);
             Draw.Ellipse(200, 200, 150, 150);
 
-            // this is the mouth of him
+            //Wild Mustard Head
             Draw.SetFillColor(0);
             Draw.Arc(200, 220, 90, 90, 0, 180);
 
-            // this is the left eye
+            //Left eye
             Draw.SetFillColor(0);
             Draw.Ellipse(160, 175, 25, 25);
 
-            // yarrrg! It's me right eye!
+            //Right eye
             Draw.SetFillColor(0);
             Draw.Ellipse(240, 175, 25, 25);
 
 
-            //If statement for different faces
+            //If statement for different face
             if (Input.IsMouseButtonDown(MouseButton.Left) == true)
             {
-                //this is the wind and squinty face
 
-                //mustard squinty face
+                //mustard head 2
                 Draw.SetFillColor(255, 255, 0);
                 Draw.Ellipse(200, 200, 150, 150);
 
@@ -87,7 +86,7 @@ namespace MohawkGame2D
                 Draw.SetFillColor(0);
                 Draw.Rectangle(155, 220, 90, 20);
 
-                // scary wind particles
+                //wind shapes
                 Draw.SetFillColor(76, 83, 95);
                 Draw.Rectangle(Input.GetMouseX(), Input.GetMouseY(), 150, 30);
                 Draw.SetFillColor(76, 83, 95);
